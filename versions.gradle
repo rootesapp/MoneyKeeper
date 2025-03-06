@@ -51,6 +51,7 @@ deps.gradle_plugin = "com.android.tools.build:gradle:$versions.gradle_plugin"
 deps.junit = "junit:junit:$versions.junit"
 deps.test_runner = "com.android.support.test:runner:$versions.test_runner"
 deps.spresso_core = "com.android.support.test.espresso:espresso-core:$versions.espresso"
+deps.AndResGuard_gradle_plugin = "com.tencent.mm:AndResGuard-gradle-plugin:$versions.AndResGuard_gradle_plugin"
 
 def support = [:]
 support.app_compat = "com.android.support:appcompat-v7:$versions.support"
@@ -97,6 +98,8 @@ def static addRepos(RepositoryHandler handler) {
     handler.maven {
         url "https://jitpack.io"
     }
+     handler.maven { url 'https://maven.aliyun.com/repository/google' }
+  handler.maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
 }
 
 ext.addRepos = this.&addRepos
