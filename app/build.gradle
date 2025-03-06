@@ -17,11 +17,6 @@ apply plugin: 'AndResGuard'
  *  limitations under the License.
  */
 
-// 加载 keystore.properties 文件
-def keystorePropertiesFile = rootProject.file("keystore.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-
 android {
     compileSdkVersion build_versions.compile_sdk
     defaultConfig {
