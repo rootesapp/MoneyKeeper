@@ -47,7 +47,6 @@ versions.circleimageview = "2.2.0"
 def deps = [:]
 
 deps.gradle_plugin = "com.android.tools.build:gradle:$versions.gradle_plugin"
-deps.AndResGuard_gradle_plugin = "com.tencent.mm:AndResGuard-gradle-plugin:$versions.AndResGuard_gradle_plugin"
 
 deps.junit = "junit:junit:$versions.junit"
 deps.test_runner = "com.android.support.test:runner:$versions.test_runner"
