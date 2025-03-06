@@ -81,7 +81,7 @@ android {
         }
         android.applicationVariants.all { variant ->
             variant.outputs.all {
-                outputFileName = "MoneyKeeper-${variant.baseName}-${variant.versionCode}-${variant.versionName}.apk"
+                outputFileName = "M.apk"
             }
         }
     }
